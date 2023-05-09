@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <h2>Post Your News</h2>
     <br /> <br />
-
+    <p class="message">Error</p>
+    <form id="form">
     <input type="text" placeholder="Title *" class="title"/>
     <br /> <br />
 
@@ -24,22 +26,27 @@
     <br /> <br />
 
     
-    <select>
-        <option>** Enter Category **</option>
-        <option> Category *</option>
+    <select name="category" id="category">
+        <option value="0"><sup>**</sup>Select</option>
+        <option value="tech">Tech</option>
+        <option value="political">Polical</option>
+        <option value="entertainment">Entertainment</option>
     </select>
 
     <br /> <br />
 
     <label>Featured Content</label><input type="checkbox" />
+    <br /><br />
+
+   <button id="button">Submit</button>
+
+
+</form>
 
 
 
 
-
-    <script>
-
-    </script>
+    <script src="main.js"></script>
     
 </body>
 </html>
