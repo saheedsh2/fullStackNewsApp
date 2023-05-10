@@ -6,7 +6,19 @@ const app = express()
 
 app.use(express.static('public'))
 
-new News('test.txt')
+const news = new News();
+
+const test = async () => {
+    const data = await news.getByCategory('political');
+    console.log(data)
+}
+
+test();
+
+
+
+
+
 
 app.listen(5000, () => {
     console.log('Port is listening')
